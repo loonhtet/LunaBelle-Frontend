@@ -42,9 +42,9 @@ export const Post = () => {
               />
               <div class="p-6">
                 <h2 class="font-bold text-gray-800 mb-5">{posts.title}</h2>
-                {/* <p className="truncate text-gray-600 mb-4">
+                <p className="line-clamp-2 text-gray-600 mb-4">
                   <BlockContent blocks={posts.body} />
-                </p> */}
+                </p>
 
                 <Link
                   to={"/blog/" + posts.slug.current}
