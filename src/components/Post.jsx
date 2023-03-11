@@ -25,7 +25,7 @@ export const Post = () => {
 
   return (
     <section className="">
-      <div className="max-w-5xl mx-auto md:pt-52 pt-32 px-3">
+      <div className="max-w-5xl mx-auto md:pt-52 pt-32 pb-10 px-3">
         <h1 className="md:text-6xl md:my-5 text-4xl my-3 leading-tight tracking-wider af-font">
           Blog
         </h1>

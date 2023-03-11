@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
-    <section className="md:pt-52 pt-32">
+    <section className="md:pt-52 pt-32 pb-10">
       <div className="container px-6 mx-auto">
         <div className="flex flex-col items-center justify-center">
           <img
