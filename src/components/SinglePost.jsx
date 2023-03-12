@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { SanityClient } from "@sanity/client";
 import { client, urlFor } from "../client";
 import BlockContent from "@sanity/block-content-to-react";
+import serializers from "./serializers";
 
 export const SinglePost = () => {
   const [post, setpost] = useState([]);
@@ -31,10 +31,9 @@ export const SinglePost = () => {
         <div className="max-w-xl mx-auto space-y-10" key={posts.slug.current}>
           <img className="w-full mx-auto" src={urlFor(posts.image)} alt="" />
           <h1 className="text-4xl font-bold mb-4 text-center">{posts.title}</h1>
-          <p className="text-gray-500 text-sm mb-4"></p>
-          <div className="prose max-w-full ">
-            <BlockContent blocks={posts.body} />
-          </div>
+          <article className="max-w-full prose lg:prose-xl">
+            <BlockContent blocks={posts.body} serializers={serializers} />
+          </article>
         </div>
       ))}
     </div>

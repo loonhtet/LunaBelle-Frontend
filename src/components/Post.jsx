@@ -41,8 +41,10 @@ export const Post = () => {
                 alt="Blog post image"
               />
               <div class="p-6">
-                <h2 class="font-bold text-gray-800 mb-5">{posts.title}</h2>
-                <p className="line-clamp-2 text-gray-600 mb-4">
+                <h2 class="font-bold text-xl text-gray-800 mb-5">
+                  {posts.title}
+                </h2>
+                <p className="text-sm line-clamp-2 text-gray-600 mb-5">
                   <BlockContent blocks={posts.body} />
                 </p>
 
